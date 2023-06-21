@@ -11,13 +11,13 @@
   break-inside: avoid;
   filter: grayscale(1);
 }
-/* .editor-wrap .box:before {
-  content: '';
+.editor-wrap .box:before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   filter: grayscale(1);
-} */
+}
 
 .editor-wrap .box:hover {
   filter: blur(0);
@@ -79,6 +79,12 @@
   width: 100%;
 }
 
+@media (max-width: 1920px) {
+  .btn-close {
+    top: -5px;
+    right: -6.5rem;
+  }
+}
 @media (max-width: 1200px) {
   .editor-wrap {
     width: calc(100% - 40px);
