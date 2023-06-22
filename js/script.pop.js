@@ -49,4 +49,18 @@ $(function () {
       $galleryContent.html('');
     }, 500); // 0.5초
   });
+
+  // $btnClose을 클릭했을 때 팝업창 닫기
+  $btnClose.on('click', function () {
+    // 추가 코드가 필요할 때
+    closePopup();
+  });
+
+  $dim.on('click', closePopup);
+
+  // 공통의 동작을 함수로 정의
+  function closePopup() {
+    $popup.removeClass('active');
+    $dim.fadeOut();
+  }
 });
