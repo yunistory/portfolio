@@ -48,7 +48,7 @@
 .menu-wrap::before {
   position: absolute;
   content: '';
-  left: -15rem;
+  left: -24rem;
   width: 15rem;
   height: 100%;
   background: #7f58ee;
