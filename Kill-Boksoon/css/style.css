@@ -775,7 +775,7 @@ body {
   background-image: url(../img/facebook-on.svg);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
   /*   .main-img figure img {
     height: 100%;
     object-fit: contain;
