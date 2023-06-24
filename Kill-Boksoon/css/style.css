@@ -1,44 +1,44 @@
 @charset 'utf-8';
 
 @font-face {
-  font-family: 'JSA-R';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirangPPURI-RegularA1.woff')
-    format('woff');
+  font-family: "JSA-R";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirangPPURI-RegularA1.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'PT';
+  font-family: "PT";
   font-weight: 400;
   font-display: swap;
-  src: local('Pretendard Regular'),
-    url('../fonts/Pretendard-Regular.woff2') format('woff2'),
-    url('../fonts/Pretendard-Regular.woff') format('woff');
+  src: local("Pretendard Regular"),
+    url("../fonts/Pretendard-Regular.woff2") format("woff2"),
+    url("../fonts/Pretendard-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: 'PT';
+  font-family: "PT";
   font-weight: 500;
   font-display: swap;
-  src: local('Pretendard Medium'),
-    url('../fonts/Pretendard-Medium.woff2') format('woff2'),
-    url('../fonts/Pretendard-Medium.woff') format('woff');
+  src: local("Pretendard Medium"),
+    url("../fonts/Pretendard-Medium.woff2") format("woff2"),
+    url("../fonts/Pretendard-Medium.woff") format("woff");
 }
 @font-face {
-  font-family: 'PT';
+  font-family: "PT";
   font-weight: 700;
   font-display: swap;
-  src: local('Pretendard Bold'),
-    url('../fonts/Pretendard-Bold.woff2') format('woff2'),
-    url('../fonts/Pretendard-Bold.woff') format('woff');
+  src: local("Pretendard Bold"),
+    url("../fonts/Pretendard-Bold.woff2") format("woff2"),
+    url("../fonts/Pretendard-Bold.woff") format("woff");
 }
 @font-face {
-  font-family: 'PT';
+  font-family: "PT";
   font-weight: 800;
   font-display: swap;
-  src: local('Pretendard ExtraBold'),
-    url('../fonts/Pretendard-ExtraBold.woff2') format('woff2'),
-    url('../fonts/Pretendard-ExtraBold.woff') format('woff');
+  src: local("Pretendard ExtraBold"),
+    url("../fonts/Pretendard-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Pretendard-ExtraBold.woff") format("woff");
 }
 
 hr,
@@ -68,7 +68,7 @@ html {
 }
 
 body {
-  font: /* 500 폰트 굵기 확인 */ 2rem/1.5 'PT', 'JSA-R', sans-serif;
+  font: /* 500 폰트 굵기 확인 */ 2rem/1.5 "PT", "JSA-R", sans-serif;
   color: var(--text-color);
   word-break: keep-all; /* wbka 어절*/
   text-transform: capitalize; /* ttc 첫글자 대문자표시*/
@@ -96,19 +96,21 @@ body {
 
 /* 메인컷 */
 .sub-visual {
-  width: 192.6rem;
-  height: 190rem;
+  /*   width: 192.6rem; */
+  /*   height: 190rem; */
+  height: 90vw;
   margin: 0 auto;
   position: relative;
+  /*   border: 1px solid #fff; */
 }
 
 .sub-visual .sub-title strong {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: -80rem;
-  top: 20rem;
-  background: url(../img/brush-01.png) no-repeat 0 0 / contain;
+  left: -45%;
+  top: 12%;
+  background: url(../img/brush-01.png) no-repeat 0 0 / cover;
   z-index: -1;
   opacity: 0.5;
 
@@ -130,8 +132,8 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  right: -50rem;
-  top: -35rem;
+  right: -10%;
+  top: 8%;
   background: url(../img/brush-02.png) no-repeat 0 0 / cover;
   z-index: -1;
   opacity: 0.5;
@@ -151,20 +153,24 @@ body {
   }
 }
 
-.sub-visual .sub-title h2 {
+/* .main-img {
   position: absolute;
-  left: 0px;
+  left: 50%;
   top: -6rem;
-  width: 100%;
-  height: 100%;
-  background: url(../img/main-img.png) no-repeat 0 0 / cover;
+  width: 192rem;
+  transform: translateX(-50%);
+
   z-index: 1;
 
   animation: scale 0.5s 0.5s;
   animation-fill-mode: both;
+} */
+.main-img figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-@keyframes scale {
+/* .sub-visual .sub-title main-img @keyframes scale {
   0% {
     opacity: 0;
     transform: scale(1.2);
@@ -173,14 +179,15 @@ body {
     opacity: 1;
     transform: scale(1);
   }
-}
+} */
 
 .sub-visual .logo {
   position: absolute;
   width: 102.2rem;
   height: 46.3rem;
-  left: 49.2rem;
-  top: 141.7rem;
+  left: 50%;
+  bottom: -5%;
+  transform: translateX(-50%);
 
   background: url(../img/movie-logo.png) no-repeat 0 0 / cover;
   z-index: 10;
@@ -250,7 +257,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url(../img/berlinale-text-box.png) no-repeat 0 0;
+  background: url(../img/berlinale-text-box.png) no-repeat 0 0 / cover;
 }
 
 .berlinale-img {
@@ -262,7 +269,10 @@ body {
   margin-top: 6rem;
   position: relative;
 }
-
+.berlinale-img figure img {
+  width: 100%;
+  height: 100%;
+}
 .blood-01 {
   position: absolute;
   width: 53.3rem;
@@ -288,8 +298,9 @@ body {
   color: #fff;
   /* border: 1px solid #0f0; */
   position: relative;
-  width: 192rem;
+  /* width: 192rem; */
   margin: 0 auto;
+  margin-top: 10rem;
 }
 
 .bullet-01 {
@@ -354,9 +365,10 @@ body {
   text-align: center;
   position: relative;
   margin-top: 20rem;
+  margin: 0 auto;
 }
 .headline {
-  font-family: 'JSA-R', sans-serif;
+  font-family: "JSA-R", sans-serif;
   font-size: 9rem;
   text-align: center;
   color: #890101;
@@ -371,26 +383,6 @@ body {
   font-size: 2.4rem;
   margin-top: 2rem;
 }
-
-/* 종횡비 옛날 방식 */
-/* .video {
-  position: relative;
-  margin-top: 5rem;
-  z-index: 1;
-}
-.video::before {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-top: 56.25%;
-}
-.video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
 
 .video {
   aspect-ratio: 16/9;
@@ -429,9 +421,11 @@ body {
   margin-top: 25rem;
   position: relative;
   margin: 0 auto;
-  width: 192rem;
+  /*   width: 192rem;
+ */
   height: 121rem;
-  /* border: 1px solid #0ff; */
+  /*   border: 1px solid #0ff;
+ */
 }
 .character .character-bg {
   position: absolute;
@@ -442,21 +436,29 @@ body {
   background: url(../img/character-main-bg.png) no-repeat 0 0 / contain;
   z-index: -1;
 }
-
+.character-con div {
+  /*   border: 1px solid #fff;
+ */
+}
 .character-con .headline {
-  margin-top: 20rem;
+  margin-top: 12rem;
+}
+.character-con figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .character-img01 {
   position: absolute;
-  bottom: 0rem;
-  left: 6rem;
+  bottom: -3%;
+  left: -4%;
 }
 .info-01 {
   position: absolute;
-  top: 18rem;
-  left: 20rem;
-  background: url(../img/text-box-01.png) no-repeat 0 0;
+  top: 0%;
+  left: 0%;
+  background: url(../img/text-box-01.png) no-repeat 0 0 / contain;
 }
 .character-img02 {
   position: absolute;
@@ -465,47 +467,49 @@ body {
 }
 .info-02 {
   position: absolute;
-  top: 52rem;
-  right: 40rem;
-  background: url(../img/text-box-02.png) no-repeat 0 0;
+  top: 35%;
+  right: 26%;
+  background: url(../img/text-box-02.png) no-repeat 0 0 / contain;
 }
 .character-img03 {
   position: absolute;
-  bottom: 3rem;
-  left: 45rem;
+  bottom: 1%;
+  left: 11%;
 }
 .info-03 {
   position: absolute;
-  top: 30rem;
-  left: 78rem;
-  background: url(../img/text-box-03.png) no-repeat 0 0;
+  top: 12%;
+  left: 37%;
+  background: url(../img/text-box-03.png) no-repeat 0 0 / contain;
 }
 .character-img04 {
   position: absolute;
-  bottom: 20rem;
-  right: 65rem;
+  bottom: 28%;
+  right: 34%;
 }
 .info-04 {
   position: absolute;
-  top: 35rem;
-  right: 55rem;
-  background: url(../img/text-box-04.png) no-repeat 0 0;
+  top: 10%;
+  right: 24%;
+  background: url(../img/text-box-04.png) no-repeat 0 0 / contain;
 }
 .character-img05 {
   position: absolute;
-  top: 50rem;
-  right: 2rem;
+  top: 17%;
+  right: -4%;
 }
 .info-05 {
   position: absolute;
-  top: 35rem;
-  right: 20rem;
-  background: url(../img/text-box-05.png) no-repeat 0 0;
+  top: 13%;
+  right: 7%;
+  background: url(../img/text-box-05.png) no-repeat 0 0 / contain;
 }
 .character-info {
   /* border: 1px solid #0f0; */
-  width: 20.8rem;
-  height: 17rem;
+  width: 27rem;
+  /* height: 21rem; */
+  aspect-ratio: 1/0.72;
+
   color: #fff;
   padding: 1.5rem 2rem;
 }
@@ -538,7 +542,7 @@ body {
   justify-content: center;
 }
 .still-cut::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -12rem;
   width: 192rem;
@@ -569,7 +573,7 @@ body {
   position: relative;
 }
 .still-item .main::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -585,7 +589,7 @@ body {
   position: relative;
 }
 .still-item .left01::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -600,7 +604,7 @@ body {
   filter: blur(2px);
 }
 .still-item .left02::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -615,7 +619,7 @@ body {
   filter: blur(2px);
 }
 .still-item .right01::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -630,7 +634,7 @@ body {
   filter: blur(2.5px);
 }
 .still-item .right02::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -744,7 +748,7 @@ body {
 }
 
 .sns-link li a::before {
-  content: '';
+  content: "";
   display: block;
   width: 46px;
   height: 46px;
@@ -771,60 +775,65 @@ body {
   background-image: url(../img/facebook-on.svg);
 }
 
-@media screen and (max-width: 1800px) {
-  .berlinale-img figure {
-    width: 36rem;
-    /* height: 24.8rem; */
-    object-fit: cover;
-  }
+@media screen and (max-width: 1024px) {
+  /*   .main-img figure img {
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid #fff;
+  } */
   .main-actress {
     right: -45rem;
     bottom: -10rem;
   }
-
-  .character-info {
-    width: 27rem;
-    height: 21.2rem;
-    background-size: contain;
+  .character {
+    height: 105rem;
+  }
+  .character-con .headline {
+    margin-top: 5rem;
   }
   .character-img01 {
-    bottom: 0rem;
-    left: -5rem;
+    top: 28%;
+    left: -8%;
+    height: 55vw;
   }
   .info-01 {
-    top: 18rem;
-    left: 2rem;
+    top: 10%;
+    left: 0%;
   }
   .character-img02 {
-    bottom: -50px;
-    right: 4rem;
+    top: 45%;
+    right: 0%;
+    height: 42vw;
   }
   .info-02 {
-    top: 38rem;
-    right: 54rem;
+    top: 28%;
+    right: 20%;
   }
   .character-img03 {
-    bottom: -23rem;
-    left: 7rem;
+    top: 32%;
+    left: 7%;
+    height: 52vw;
   }
   .info-03 {
-    top: 30rem;
-    left: 50rem;
+    top: 13%;
+    left: 25%;
   }
   .character-img04 {
-    bottom: 20rem;
-    right: 77rem;
+    top: 32%;
+    right: 41%;
+    height: 41vw;
   }
   .info-04 {
-    top: 16rem;
-    right: 61rem;
+    top: 13%;
+    right: 31%;
   }
   .character-img05 {
-    top: 40rem;
-    right: 0rem;
+    top: 30%;
+    right: 0%;
+    height: 35vw;
   }
   .info-05 {
-    top: 21rem;
-    right: 12rem;
+    top: 11%;
+    right: 2%;
   }
 }
