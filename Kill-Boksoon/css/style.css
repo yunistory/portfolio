@@ -364,8 +364,8 @@ body {
 .synopis-con {
   text-align: center;
   position: relative;
-  margin-top: 20rem;
   margin: 0 auto;
+  margin-top: 20rem;
 }
 .headline {
   font-family: 'JSA-R', sans-serif;
@@ -441,7 +441,7 @@ body {
  */
 }
 .character-con .headline {
-  margin-top: 12rem;
+  margin-top: 7rem;
 }
 .character-con figure img {
   width: 100%;
@@ -449,62 +449,58 @@ body {
   object-fit: cover;
 }
 
-.character-con .headline {
-  margin-top: 20rem;
-}
-
 .character-img01 {
   position: absolute;
-  bottom: 0rem;
+  top: 24rem;
   left: 6rem;
 }
 .info-01 {
   position: absolute;
-  top: 18rem;
+  top: 8rem;
   left: 20rem;
   background: url(../img/text-box-01.png) no-repeat 0 0;
 }
 .character-img02 {
   position: absolute;
-  bottom: 0;
-  right: 0rem;
+  top: 39rem;
+  right: 6rem;
 }
 .info-02 {
   position: absolute;
-  top: 52rem;
-  right: 40rem;
+  top: 37rem;
+  right: 45rem;
   background: url(../img/text-box-02.png) no-repeat 0 0;
 }
 .character-img03 {
   position: absolute;
-  bottom: 3rem;
+  top: 32rem;
   left: 45rem;
 }
 .info-03 {
   position: absolute;
-  top: 30rem;
+  top: 17rem;
   left: 78rem;
   background: url(../img/text-box-03.png) no-repeat 0 0;
 }
 .character-img04 {
   position: absolute;
-  bottom: 20rem;
+  top: 25rem;
   right: 65rem;
 }
 .info-04 {
   position: absolute;
-  top: 35rem;
-  right: 55rem;
+  top: 13rem;
+  right: 53rem;
   background: url(../img/text-box-04.png) no-repeat 0 0;
 }
 .character-img05 {
   position: absolute;
-  top: 50rem;
-  right: 2rem;
+  top: 23rem;
+  right: 7rem;
 }
 .info-05 {
   position: absolute;
-  top: 35rem;
+  top: 8rem;
   right: 20rem;
   background: url(../img/text-box-05.png) no-repeat 0 0;
 }
@@ -538,17 +534,18 @@ body {
   /* border: 1px solid #ff0; */
   display: flex;
   margin: 0 auto;
-  padding: 9rem 0;
+  /* padding: 9rem 0; */
   position: relative;
   margin: 0 auto;
   justify-content: center;
+  padding: 0 0 9rem 0;
 }
 .still-cut::before {
   content: '';
   position: absolute;
-  top: -12rem;
+  top: -23rem;
   width: 192rem;
-  height: 141.1rem;
+  height: 143.1rem;
   background: url(../img/still-bg.png) no-repeat 0 0 / cover;
 }
 .still-con {
