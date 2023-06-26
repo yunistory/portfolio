@@ -1,44 +1,44 @@
 @charset 'utf-8';
 
 @font-face {
-  font-family: 'JSA-R';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirangPPURI-RegularA1.woff')
-    format('woff');
+  font-family: "JSA-R";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirangPPURI-RegularA1.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'PT';
+  font-family: "PT";
   font-weight: 400;
   font-display: swap;
-  src: local('Pretendard Regular'),
-    url('../fonts/Pretendard-Regular.woff2') format('woff2'),
-    url('../fonts/Pretendard-Regular.woff') format('woff');
+  src: local("Pretendard Regular"),
+    url("../fonts/Pretendard-Regular.woff2") format("woff2"),
+    url("../fonts/Pretendard-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: 'PT';
+  font-family: "PT";
   font-weight: 500;
   font-display: swap;
-  src: local('Pretendard Medium'),
-    url('../fonts/Pretendard-Medium.woff2') format('woff2'),
-    url('../fonts/Pretendard-Medium.woff') format('woff');
+  src: local("Pretendard Medium"),
+    url("../fonts/Pretendard-Medium.woff2") format("woff2"),
+    url("../fonts/Pretendard-Medium.woff") format("woff");
 }
 @font-face {
-  font-family: 'PT';
+  font-family: "PT";
   font-weight: 700;
   font-display: swap;
-  src: local('Pretendard Bold'),
-    url('../fonts/Pretendard-Bold.woff2') format('woff2'),
-    url('../fonts/Pretendard-Bold.woff') format('woff');
+  src: local("Pretendard Bold"),
+    url("../fonts/Pretendard-Bold.woff2") format("woff2"),
+    url("../fonts/Pretendard-Bold.woff") format("woff");
 }
 @font-face {
-  font-family: 'PT';
+  font-family: "PT";
   font-weight: 800;
   font-display: swap;
-  src: local('Pretendard ExtraBold'),
-    url('../fonts/Pretendard-ExtraBold.woff2') format('woff2'),
-    url('../fonts/Pretendard-ExtraBold.woff') format('woff');
+  src: local("Pretendard ExtraBold"),
+    url("../fonts/Pretendard-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Pretendard-ExtraBold.woff") format("woff");
 }
 
 hr,
@@ -68,7 +68,7 @@ html {
 }
 
 body {
-  font: /* 500 폰트 굵기 확인 */ 2rem/1.5 'PT', 'JSA-R', sans-serif;
+  font: /* 500 폰트 굵기 확인 */ 2rem/1.5 "PT", "JSA-R", sans-serif;
   color: var(--text-color);
   word-break: keep-all; /* wbka 어절*/
   text-transform: capitalize; /* ttc 첫글자 대문자표시*/
@@ -364,11 +364,11 @@ body {
 .synopis-con {
   text-align: center;
   position: relative;
-  margin: 0 auto;
   margin-top: 20rem;
+  margin: 0 auto;
 }
 .headline {
-  font-family: 'JSA-R', sans-serif;
+  font-family: "JSA-R", sans-serif;
   font-size: 9rem;
   text-align: center;
   color: #890101;
@@ -421,8 +421,8 @@ body {
   margin-top: 25rem;
   position: relative;
   margin: 0 auto;
-  width: 192rem;
-
+  /*   width: 192rem;
+ */
   height: 121rem;
   /*   border: 1px solid #0ff;
  */
@@ -441,7 +441,7 @@ body {
  */
 }
 .character-con .headline {
-  margin-top: 7rem;
+  margin-top: 12rem;
 }
 .character-con figure img {
   width: 100%;
@@ -451,63 +451,65 @@ body {
 
 .character-img01 {
   position: absolute;
-  top: 25rem;
-  left: 4rem;
+  bottom: -3%;
+  left: -4%;
 }
 .info-01 {
   position: absolute;
-  top: 8rem;
-  left: 15rem;
+  top: 0%;
+  left: 0%;
   background: url(../img/text-box-01.png) no-repeat 0 0 / contain;
 }
 .character-img02 {
   position: absolute;
-  top: 50rem;
-  right: 6rem;
+  bottom: 0;
+  right: 0rem;
 }
 .info-02 {
   position: absolute;
-  top: 37rem;
-  right: 45rem;
+  top: 35%;
+  right: 26%;
   background: url(../img/text-box-02.png) no-repeat 0 0 / contain;
 }
 .character-img03 {
   position: absolute;
-  top: 27rem;
-  left: 40rem;
+  bottom: 1%;
+  left: 11%;
 }
 .info-03 {
   position: absolute;
-  top: 17rem;
-  left: 78rem;
+  top: 12%;
+  left: 37%;
   background: url(../img/text-box-03.png) no-repeat 0 0 / contain;
 }
 .character-img04 {
   position: absolute;
-  top: 33rem;
-  right: 65rem;
+  bottom: 28%;
+  right: 34%;
 }
 .info-04 {
   position: absolute;
-  top: 13rem;
-  right: 53rem;
+  top: 10%;
+  right: 24%;
   background: url(../img/text-box-04.png) no-repeat 0 0 / contain;
 }
 .character-img05 {
   position: absolute;
-  top: 23rem;
-  right: 7rem;
+  top: 17%;
+  right: -4%;
 }
 .info-05 {
   position: absolute;
-  top: 8rem;
-  right: 20rem;
+  top: 13%;
+  right: 7%;
   background: url(../img/text-box-05.png) no-repeat 0 0 / contain;
 }
 .character-info {
   /* border: 1px solid #0f0; */
-  width: 26rem;
-  height: 20rem;
+  width: 27rem;
+  /* height: 21rem; */
+  aspect-ratio: 1/0.72;
+
   color: #fff;
   padding: 1.5rem 2rem;
 }
@@ -534,18 +536,17 @@ body {
   /* border: 1px solid #ff0; */
   display: flex;
   margin: 0 auto;
-  /* padding: 9rem 0; */
+  padding: 9rem 0;
   position: relative;
   margin: 0 auto;
   justify-content: center;
-  padding: 0 0 9rem 0;
 }
 .still-cut::before {
-  content: '';
+  content: "";
   position: absolute;
-  top: -23rem;
+  top: -12rem;
   width: 192rem;
-  height: 143.1rem;
+  height: 141.1rem;
   background: url(../img/still-bg.png) no-repeat 0 0 / cover;
 }
 .still-con {
@@ -572,7 +573,7 @@ body {
   position: relative;
 }
 .still-item .main::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -588,7 +589,7 @@ body {
   position: relative;
 }
 .still-item .left01::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -603,7 +604,7 @@ body {
   filter: blur(2px);
 }
 .still-item .left02::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -618,7 +619,7 @@ body {
   filter: blur(2px);
 }
 .still-item .right01::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -633,7 +634,7 @@ body {
   filter: blur(2.5px);
 }
 .still-item .right02::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -747,7 +748,7 @@ body {
 }
 
 .sns-link li a::before {
-  content: '';
+  content: "";
   display: block;
   width: 46px;
   height: 46px;
@@ -834,29 +835,5 @@ body {
   .info-05 {
     top: 11%;
     right: 2%;
-  }
-  .character-info {
-    /* border: 1px solid #0f0; */
-    width: 25rem;
-    /* height: 20rem; */
-    color: #fff;
-    padding: 2rem 2rem;
-  }
-
-  .character-info dl dt {
-    font-weight: 700;
-    font-size: 1.8rem;
-    font-weight: 300;
-    gap: 1rem;
-    display: flex;
-    align-items: center;
-  }
-  .character-info dl dt b {
-    font-weight: 700;
-    font-size: 1rem;
-    display: block;
-  }
-  .character-info dl dd {
-    font-size: 1rem;
   }
 }
