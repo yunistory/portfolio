@@ -538,27 +538,37 @@
   color: #666;
 }
 .color ul li strong {
-  border-radius: 0.5rem;
+  position: relative;
   margin-top: 1rem;
-  font-size: 1.4rem;
-  font-weight: 300;
   width: 10rem;
   height: 10rem;
-  display: flex;
   align-items: center;
   justify-content: center;
-  color: #bbbbbb;
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 3rem;
+  color: #d1d1d1;
 }
-.color ul li:nth-child(1) strong {
+.color ul li span {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  z-index: -1;
+  filter: blur(0.1rem);
+  border-radius: 1rem;
+}
+
+.color ul li:nth-child(1) span {
   background: #7f58ee;
 }
-.color ul li:nth-child(2) strong {
+.color ul li:nth-child(2) span {
   background: #4345c0;
 }
-.color ul li:nth-child(3) strong {
+.color ul li:nth-child(3) span {
   background: #666;
 }
-.color ul li:nth-child(4) strong {
+.color ul li:nth-child(4) span {
   background: #fdfdfd;
   color: #515151;
 }
