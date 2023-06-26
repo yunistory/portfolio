@@ -311,7 +311,7 @@
 .info-wrap .info-title {
   font-size: 4rem;
   font-weight: 700;
-  color: #7f58ee;
+  color: #666;
 }
 
 .overview:after {
@@ -325,6 +325,7 @@
   font-size: 1.8rem;
   width: 80rem;
   color: #d1d1d1;
+  margin-top: 1rem;
 }
 .overview ul {
   display: flex;
@@ -531,8 +532,9 @@
 }
 .color ul li p {
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 500;
   margin-top: 1rem;
+  color: #666;
 }
 .color ul li strong {
   border-radius: 0.5rem;
@@ -544,6 +546,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #bbbbbb;
 }
 .color ul li:nth-child(1) strong {
   background: #7f58ee;
@@ -556,5 +559,5 @@
 }
 .color ul li:nth-child(4) strong {
   background: #fdfdfd;
-  color: #222;
+  color: #515151;
 }
