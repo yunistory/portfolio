@@ -412,22 +412,22 @@
   filter: blur(1rem);
 }
 .keyword ul li:nth-child(1) span {
-  background: rgba(220, 107, 162, 0.1);
+  background: rgba(220, 107, 162, 0.2);
 }
 .keyword ul li:nth-child(2) span {
-  background: rgba(71, 170, 93, 0.1);
+  background: rgba(71, 170, 93, 0.2);
 }
 .keyword ul li:nth-child(3) span {
-  background: rgba(113, 125, 234, 0.1);
+  background: rgba(113, 125, 234, 0.2);
 }
 .keyword ul li:nth-child(4) span {
-  background: rgba(191, 93, 226, 0.1);
+  background: rgba(191, 93, 226, 0.2);
 }
 .keyword ul li:nth-child(5) span {
-  background: rgba(151, 90, 90, 0.13);
+  background: rgba(151, 90, 90, 0.2);
 }
 .keyword ul li:nth-child(6) span {
-  background: rgba(45, 187, 179, 0.1);
+  background: rgba(45, 187, 179, 0.2);
 }
 
 .energy {
