@@ -324,7 +324,7 @@
 .overview p {
   font-size: 1.8rem;
   width: 80rem;
-  color: #d1d1d1;
+  color: #c5c5c5;
   margin-top: 1rem;
 }
 .overview ul {
@@ -506,6 +506,7 @@
   padding: 0 3rem 0 0;
   font-weight: 300;
   font-size: 1.6rem;
+  color: #666;
 }
 .font table tbody tr td {
   font-size: 1.8rem;
