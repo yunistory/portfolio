@@ -16,5 +16,7 @@ $(function () {
     },
     autoplay: true,
     loop: true,
+    autoplaySpeed: 0,
+    speed: 2000,
   });
 });
