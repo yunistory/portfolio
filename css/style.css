@@ -494,7 +494,7 @@
   gap: 3rem;
 }
 .font table tbody tr th {
-  width: 20em;
+  width: 24.5em;
   text-align: right;
   padding: 0 3rem 0 0;
   font-weight: 300;
@@ -511,7 +511,7 @@
   font-size: 5rem;
   text-align: left;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
 }
 .color {
   padding: 7rem;
