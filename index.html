@@ -26,6 +26,7 @@
 
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/script.stagger.js"></script>
+    <script src="./js/script-timeline.js"></script>
 
     <script src="./js/swiper.min.js"></script>
     <script src="./js/swiper-main.js"></script>
@@ -245,28 +246,84 @@
         <div class="inner">
           <div class="info-wrap">
             <div class="overview">
-              <h2 class="info-title">Overview</h2>
-              <p>
+              <h2
+                class="info-title title01"
+                data-splitting
+                data-aos="fade-up"
+                data-aos-duration="300"
+              >
+                Overview
+              </h2>
+              <p data-splitting data-aos="fade-up" data-aos-duration="500">
                 웹, 모바일 디자인을 설계함에 있어 사용자 경험을 최우선할 수 있는
-                방법을 모색하여, <br />여러 다양한 디자인을 접목시켜 보면서
-                사용자가 좀더 편리하고 직관적으로 <br />사용할 수 있도록
-                설계하고자 하였습니다.<br />
+                방법을 모색하여,
+              </p>
+              <p data-splitting data-aos="fade-up" data-aos-duration="1000">
+                여러 다양한 디자인을 접목시켜 보면서 사용자가 좀더 편리하고
+                직관적으로
+              </p>
+              <p data-splitting data-aos="fade-up" data-aos-duration="1500">
+                사용할 수 있도록 설계하고자 하였습니다.
+              </p>
+              <p data-splitting data-aos="fade-up" data-aos-duration="2000">
                 저의 포트폴리오는 5개의 Part 구성으로 제작되어 있습니다.
               </p>
               <ul class="info-box">
-                <li class="box" style="--i: 1"><b>Renewal Design</b></li>
-                <li class="box" style="--i: 2"><b>Responsive Web Design</b></li>
-                <li class="box" style="--i: 3"><b>Microsite Design</b></li>
-                <li class="box" style="--i: 4"><b>App Design</b></li>
-                <li class="box" style="--i: 5"><b>Editorial Design</b></li>
+                <li
+                  class="box"
+                  style="--i: 1"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  <b>Renewal Design</b>
+                </li>
+                <li
+                  class="box"
+                  style="--i: 2"
+                  data-aos="fade-up"
+                  data-aos-duration="2500"
+                >
+                  <b>Responsive Web Design</b>
+                </li>
+                <li
+                  class="box"
+                  style="--i: 3"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <b>Microsite Design</b>
+                </li>
+                <li
+                  class="box"
+                  style="--i: 4"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <b>App Design</b>
+                </li>
+                <li
+                  class="box"
+                  style="--i: 5"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  <b>Editorial Design</b>
+                </li>
               </ul>
             </div>
 
             <div class="keyword">
-              <h2 class="info-title">KeyWord</h2>
+              <h2
+                class="info-title title02"
+                data-splitting
+                data-aos="fade-up"
+                data-aos-duration="300"
+              >
+                KeyWord
+              </h2>
 
               <ul>
-                <li>
+                <li class="key01" data-aos="fade-up" data-aos-duration="500">
                   <strong>사용자 중심</strong><span></span>
                   <div class="energy">
                     <span style="--i: 18px; --d: 2.5s"></span>
@@ -275,7 +332,7 @@
                     <span style="--i: 20px; --d: 5s"></span>
                   </div>
                 </li>
-                <li>
+                <li class="key02" data-aos="fade-up" data-aos-duration="600">
                   <strong>사용자 조사</strong><span></span>
                   <div class="energy">
                     <span style="--i: 18px; --d: 7.5s"></span>
@@ -284,7 +341,7 @@
                     <span style="--i: 20px; --d: 6s"></span>
                   </div>
                 </li>
-                <li>
+                <li class="key03" data-aos="fade-up" data-aos-duration="700">
                   <strong>워크폴로우 분석</strong><span></span>
                   <div class="energy">
                     <span style="--i: 18px; --d: 5.5s"></span>
@@ -293,7 +350,7 @@
                     <span style="--i: 20px; --d: 5s"></span>
                   </div>
                 </li>
-                <li>
+                <li class="key04" data-aos="fade-up" data-aos-duration="800">
                   <strong>사용자 경험</strong><span></span>
                   <div class="energy">
                     <span style="--i: 18px; --d: 4.5s"></span>
@@ -302,7 +359,7 @@
                     <span style="--i: 20px; --d: 7.5s"></span>
                   </div>
                 </li>
-                <li>
+                <li class="key05" data-aos="fade-up" data-aos-duration="900">
                   <strong>일관성</strong><span></span>
                   <div class="energy">
                     <span style="--i: 18px; --d: 7.5s"></span>
@@ -311,7 +368,7 @@
                     <span style="--i: 20px; --d: 3.5s"></span>
                   </div>
                 </li>
-                <li>
+                <li class="key06" data-aos="fade-up" data-aos-duration="1000">
                   <strong>디자인 철학</strong><span></span>
                   <div class="energy">
                     <span style="--i: 18px; --d: 5.5s"></span>
@@ -323,8 +380,13 @@
               </ul>
             </div>
 
-            <div class="font">
-              <h2 class="info-title">Fonts</h2>
+            <div
+              class="font"
+              data-splitting
+              data-aos="fade-up"
+              data-aos-duration="300"
+            >
+              <h2 class="info-title title03">Fonts</h2>
               <table>
                 <caption class="hidden">
                   fonts
@@ -336,15 +398,20 @@
                 <tbody>
                   <tr>
                     <th>Pretendard Regular 18</th>
-                    <td>UIUX Projects</td>
+                    <td
+                      data-splitting
+                      data-aos="fade-right"
+                      data-aos-duration="500"
+                    >
+                      UIUX Projects
+                    </td>
                   </tr>
                   <tr>
                     <th>Pretendard Bold 62</th>
                     <td
                       data-splitting
-                      class="case1"
                       data-aos="fade-right"
-                      data-aos-duration="400"
+                      data-aos-duration="1000"
                     >
                       Creative!<br />
                       Think the Design, Design the Think
@@ -357,19 +424,19 @@
             <div class="color">
               <h2 class="info-title">Color</h2>
               <ul>
-                <li>
+                <li data-aos="fade-right" data-aos-duration="500">
                   <p>Main Color</p>
                   <strong>7F58EE<span></span></strong>
                 </li>
-                <li>
+                <li data-aos="fade-right" data-aos-duration="1000">
                   <p>Sub Color</p>
                   <strong>4345C0<span></span></strong>
                 </li>
-                <li>
+                <li data-aos="fade-right" data-aos-duration="1500">
                   <p>Sub Color</p>
                   <strong>666666<span></span></strong>
                 </li>
-                <li>
+                <li data-aos="fade-right" data-aos-duration="2000">
                   <p>Sub Color</p>
                   <strong>FDFDFD<span></span></strong>
                 </li>
