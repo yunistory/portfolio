@@ -562,7 +562,7 @@ body {
 .still-cut::before {
   content: '';
   position: absolute;
-  top: -23rem;
+  top: -27rem;
   width: 192rem;
   height: 143.1rem;
   background: url(../img/still-bg.png) no-repeat 0 0 / cover;
