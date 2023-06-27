@@ -98,7 +98,7 @@ body::-webkit-scrollbar-thumb {
   height: 2rem;
   border-radius: 2px;
   background: #561f9b;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   text-align: center;
   flex-direction: column;
