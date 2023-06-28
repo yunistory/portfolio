@@ -16,6 +16,6 @@ $(function () {
     // setTimeout(동작, 시간);
     setTimeout(function () {
       $loading.fadeOut().remove();
-    }, 200);
+    }, 100);
   });
 });
