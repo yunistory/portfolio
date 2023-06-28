@@ -54,7 +54,7 @@
 }
 .rain > span:nth-child(1) {
   top: 0;
-  right: 08rem;
+  right: 8rem;
   left: initial;
   animation-delay: 0.2s;
   animation-duration: 1s;
@@ -91,7 +91,7 @@
   top: 0;
   right: 60rem;
   left: initial;
-  animation-delay: 1s;
+  animation-delay: 2s;
   animation-duration: 3s;
 }
 .rain > span:nth-child(7) {
@@ -105,7 +105,7 @@
   top: 0;
   right: 70rem;
   left: initial;
-  animation-delay: 1.4s;
+  animation-delay: 2.4s;
   animation-duration: 1.25s;
 }
 .rain > span:nth-child(9) {
@@ -119,6 +119,6 @@
   top: 0;
   right: 45rem;
   left: initial;
-  animation-delay: 2.75s;
-  animation-duration: 2.25s;
+  animation-delay: 5.75s;
+  animation-duration: 3.25s;
 }
